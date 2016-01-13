@@ -1,0 +1,8 @@
+# ------------------------------------------------------------------------------------------
+# 是否打开(on|off) Rewrite 功能，
+RewriteEngine on   
+ 
+RewriteCond $1 !^(index|js/|img/|css/|flash/|var/|user_guide/)|\.(js|css|ico|swf|php|html|htm|jpeg|jpg|png|bmp|gif|xml)$
+RewriteRule ^(.*)$ /index.php/$1 [NE,L]
+ 
+# ------------------------------------------------------------------------------------------
